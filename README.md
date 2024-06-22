@@ -26,3 +26,5 @@ O objetivo deste projeto é aprender os fundamentos do desenvolvimento web, incl
 ## Autor
 
 Este projeto foi desenvolvido por alunos da Ciência da Computação durante a semana acadêmica em 2024.
+
+https://docs.google.com/document/d/1qHy4FTgqvrnjhK7bSXHb5uXLmmSCfXVjf9-mKT9DBGw/edit?usp=sharing
