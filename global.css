@@ -1,0 +1,618 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #2B2B2B;
+    color: white;
+
+}
+
+body button:hover {
+    transform: scale(0.9);
+}
+
+
+.headerContainer {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.menuHeader {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logoIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.logoTitle {
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Space Mono', monospace;
+}
+
+.headline {
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.subHeadline {
+    display: flex;
+    width: 315px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.subHeadlineText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--white, #FFF);
+
+}
+
+.subHeadlineText h4 {
+    font-family: Work Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.subHeadlineText p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.inputMarketplace {
+    display: flex;
+    width: 315px;
+    height: 60px;
+    padding: 12px 0px;
+    color: #858584;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--background-secondary, #3B3B3B);
+    background-color: #2B2B2B;
+    outline: none;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.inputMarketplace {
+    padding-left: 20px;
+}
+
+.inputMarketplace::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.searchIcon {
+    position: absolute;
+    color: gray;
+    right: 3.5%;
+    width: 24px;
+    height: 24px;
+}
+
+.MarketplaceSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TabBar {
+    display: flex;
+    width: 315px;
+    height: 60px;
+    font-size: 16px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tab_bar {
+    padding: 0 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.tab_bar>li {
+    color: #858584;
+    height: 60px;
+    padding: 0 1rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tab_bar>li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.tab_bar>.active {
+    color: #FFF;
+}
+
+.tab_bar>li:hover:after {
+    box-sizing: border-box;
+    position: relative;
+    bottom: -0.5rem;
+    content: "";
+    display: block;
+    width: calc(100% + 2rem);
+    height: 2px;
+    background-color: #3B3B3B;
+    margin-top: 5px;
+}
+
+.tab_bar>.active:after {
+    box-sizing: border-box;
+    position: relative;
+    bottom: -0.5rem;
+    content: "";
+    display: block;
+    width: calc(100% + 2rem);
+    height: 2px;
+    background-color: #858584;
+    margin-top: 5px;
+}
+
+.CardSection {
+    display: grid;
+    padding: 40px 0px;
+}
+
+.CardRow {
+    width: 315px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.CardDisplay {
+    display: none;
+}
+
+.CardDisplay2 {
+    display: none;
+}
+
+.cardContainer {
+    width: 330px;
+    height: 440px;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #333333;
+    cursor: pointer;
+    transition: transform 0.4s ease
+}
+
+.cardContainer:hover {
+    transform: scale(0.92);
+}
+
+
+.cardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 173px;
+    padding: 5px 20px 0px 20px;
+    gap: 5px;
+}
+
+.NftName {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    border-radius: 120px;
+}
+
+.creator {
+    color: white;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.infos {
+    display: flex;
+    padding: 10px 10px 10px 0px;
+    justify-content: space-between;
+}
+
+.infos p {
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 400;
+    color: #858584;
+    line-height: 13.2px;
+}
+
+.infos span {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.imageContainer {
+    width: 330px;
+    height: 295px;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatarImage {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 120px;
+
+}
+
+.footerText {
+    color: #CCC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.footerTitle {
+    font-family: Space Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    padding: 15px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+    background-color: #3B3B3B;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footerLogoIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.btnFooter {
+    display: flex;
+    width: 315px;
+    height: 46px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--call-to-action, #A259FF);
+    border: none;
+}
+
+.inputFooter {
+    display: flex;
+    width: 315px;
+    height: 46px;
+    padding: 16px 30px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid var(--caption-label-text, #858584);
+    background: var(--text, #FFF);
+    color: #2B2B2B;
+    outline: none;
+}
+
+.footerLine {
+    width: 100%;
+    height: 1px;
+    background: #858584;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.footerMessage {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 88%;
+
+}
+
+.footerMessage p {
+    color: #CCC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+@media (min-width: 768px) {
+    .tab_bar {
+        padding: 0 6rem;
+    }
+}
+
+@media screen and (min-width: 834px) {
+
+    .subHeadlineText h4 {
+        font-size: 38px;
+        line-height: 120%;
+    }
+
+    .subHeadline .headline {
+        padding: 60px 0px;
+    }
+
+    .TabBar,
+    .inputMarketplace {
+        width: 680px;
+    }
+
+    .CardDisplay {
+        display: block;
+    }
+
+
+    .subHeadline {
+        width: 680px;
+    }
+
+    .CardRow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 690px;
+    }
+
+    .inputContainer {
+        position: relative;
+    }
+
+    .inputFooter {
+        width: 420px;
+        height: 60px;
+    }
+
+    .inputContainer button {
+        position: absolute;
+        left: 63%;
+    }
+
+    .btnFooter {
+        width: 160px;
+        height: 60px;
+        text-align: center;
+    }
+
+
+    .footerContainer {
+        max-width: 690px;
+        gap: 25px;
+    }
+
+    .footerContent {
+        align-items: flex-start;
+        padding: 40px 75px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .headerContainer {
+        display: flex;
+        padding: 20px 50px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .menuHeader {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .menuHeader a {
+        text-decoration: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .menuHeader a:hover {
+        transform: scale(0.9);
+    }
+
+    .btnMenu {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: Work Sans;
+        display: flex;
+        height: 60px;
+        padding: 0px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        border: none;
+        background: var(--call-to-action, #A259FF);
+    }
+
+    .menuBurguer {
+        display: none;
+    }
+
+    .tab_bar {
+        padding: 0 9.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+    .logoTitle {
+        font-size: 22px;
+    }
+
+    .logoIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .subHeadlineText h4 {
+        font-size: 51px;
+        line-height: 110%;
+    }
+
+    .subHeadlineText p {
+        font-size: 22px;
+        line-height: 160%;
+    }
+
+    .CardRow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 1050px;
+    }
+
+    .TabBar {
+        width: 1050px;
+        font-size: 22px;
+    }
+
+    .inputMarketplace {
+        width: 1050px;
+    }
+
+    .subHeadline {
+        width: 1050px;
+    }
+
+    .CardDisplay2 {
+        display: block;
+    }
+
+    .footerInfo {
+        max-width: 1049px;
+        flex-direction: row;
+        gap: 84px;
+    }
+
+    .footerContainer {
+
+        gap: 25px;
+    }
+
+    .footerContent {
+        align-items: center;
+    }
+
+
+}
