@@ -128,7 +128,7 @@
         class="btn btn-custom btn-block"
         onclick="showOne()"
       >
-        Mostrar um Específico
+        Pesquisar Usuário
       </button>
       <button
         type="button"
@@ -161,6 +161,7 @@
     <!-- Campo para mostrar um registro específico -->
     <div class="container2 hidden" id="showOneContainer">
       <div class="form-group">
+        <h3>Dados do Usuário Específico</h3>
         <label for="searchEmail">Digite o email para pesquisa:</label>
         <input
           type="email"
@@ -177,7 +178,6 @@
         Pesquisar
       </button>
       <div id="userDetails">
-        <h3>Dados do Usuário Específico</h3>
         <div id="specificUserTableContainer" style="overflow-x: auto; display: none;">
           <table class="table">
             <thead>
@@ -198,6 +198,7 @@
     <!-- Campo de entrada de e-mail e botão de exclusão -->
     <div class="container2 hidden" id="deleteEntryContainer">
       <div class="form-group">
+        <h3>Deletar Usuário</h3>
         <label for="deleteEmail">Digite o email para exclusão:</label>
         <input
           type="email"
